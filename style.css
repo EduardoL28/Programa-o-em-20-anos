@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://as1.ftcdn.net/v2/jpg/02/20/27/24/1000_F_220272450_it8jPKW7arroUdBXfv2sC8kY9LZmTRm2.jpg);
+    background-position: center;
+    border: solid 1em black;
+    /* background-size: cover; */
+}
+
+header {
+    margin-top: 10%;
+}
+
+strong {
+    text-shadow:  #108b00 0px 0px 20px, #108b00 0px 0px 30px, #108b00 0px 0px 40px ;
+}
+
+.textin-header, .textin {
+    border-radius: 20px;
+    border: solid 3px white;
+    background-color: black;
+    color: aliceblue;
+    margin: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 3%;
+    font-family: "Kode Mono", monospace;
+    
+}
+
+iframe {
+    margin-left: 19%;
+
+}
+
+h1 {
+    margin-bottom: 4%;
+    font-size: 2em;
+}
+
+h2 {
+    margin-bottom: 2%;
+}
+
+.ia {
+    margin-left: 27%;
+    width: 600px;
+    height: 400px;
+}
+
+.robo{
+    position: relative;
+    animation: robo 10s ease-in-out infinite;
+    width: 350px;
+    height: 250px;
+}
+
+.robo:hover{
+    animation-play-state: paused;
+}
+
+footer{
+    font-family: "Roboto", sans-serif;
+    text-align: center; 
+    color: #ffffff;
+    background: #000000;
+    padding-top: 1%;
+}
+
+
+@keyframes robo {
+
+    from {
+        transform: translateY(0px);
+
+    }
+
+    to {
+        transform: translatex(950px);
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    iframe {
+        margin-left: 11.5%;
+        width: 275px;
+        height: 175px;
+    }
+
+    .ia {
+        margin-left: 11.5%;
+        width: 275px;
+        height: 175px;
+    }
+
+    .robo {
+        width: 175px;
+        height: 125px;
+        animation: robo 5s infinite;
+    }
+
+
+    @keyframes robo {
+
+        from {
+            transform: translateY(0px);
+    
+        }
+    
+        to {
+            transform: translatex(200px);
+    
+        }
+    }
+}
